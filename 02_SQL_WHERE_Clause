@@ -1,0 +1,19 @@
+-- WHERE
+SELECT employee_id AS unique_id, first_name AS name_, salary AS vetan_
+FROM employee_salary 
+WHERE salary>70000 ;
+
+-- WHERE  EQUAL
+SELECT *
+FROM employee_demographics
+ WHERE  gender  = "male" ;
+ 
+ -- WHERE NOT  EQUAL
+SELECT *
+FROM employee_demographics
+ WHERE  gender   != "male" ;
+
+ -- WHERE  less
+SELECT *
+FROM employee_demographics
+ WHERE age < 30 ;
