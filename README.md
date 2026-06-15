@@ -1,4 +1,4 @@
-# SQL SELECT Statement Practice
+# 1 SQL SELECT Statement Practice
 
 ## Overview
 
@@ -26,19 +26,44 @@ FROM employee_salary;
 SELECT *
 FROM parks_departments;
 ```
+# 2 SQL WHERE Clause Practice
 
-## Learning Objectives
+## Overview
 
-* Understand the `SELECT` statement
-* Retrieve data from database tables
-* Explore table structures and records
-* Build a foundation for advanced SQL concepts
+This repository contains my practice queries for learning the SQL `WHERE` clause in MySQL. The `WHERE` clause is used to filter records based on specific conditions.
 
-## Tools Used
+## Topics Covered
 
-* MySQL
-* MySQL Workbench
+### Greater Than Operator (`>`)
 
-## Author
+```sql
+SELECT employee_id AS unique_id, first_name AS name_, salary AS vetan_
+FROM employee_salary
+WHERE salary > 70000;
+```
 
-Apoorva Chauhan
+### Equal To Operator (`=`)
+
+```sql
+SELECT *
+FROM employee_demographics
+WHERE gender = "male";
+```
+
+### Not Equal To Operator (`!=`)
+
+```sql
+SELECT *
+FROM employee_demographics
+WHERE gender != "male";
+```
+
+### Less Than Operator (`<`)
+
+```sql
+SELECT *
+FROM employee_demographics
+WHERE age < 30;
+```
+
+
