@@ -65,5 +65,62 @@ SELECT *
 FROM employee_demographics
 WHERE age < 30;
 ```
+# 3 SQL Intermediate Queries
+
+## Overview
+
+This repository contains my practice work on intermediate SQL concepts in MySQL, including grouping, sorting, filtering aggregated data, limiting results, aliasing, and joins.
+
+## Topics Covered
+
+### GROUP BY
+
+* Group records based on a column.
+* Calculate aggregate values for each group.
+
+### Aggregate Functions (MIN & MAX)
+
+* Find minimum and maximum values within groups.
+
+### ORDER BY
+
+* Sort records in ascending and descending order.
+
+### HAVING vs WHERE
+
+* `WHERE` filters rows before grouping.
+* `HAVING` filters groups after aggregation.
+
+### LIMIT
+
+* Restrict the number of rows returned.
+* Retrieve specific records using offset.
+
+### ALIASING
+
+* Assign temporary names to columns for better readability.
+
+### JOINS
+
+* Combine data from multiple tables using common columns.
+
+### SELF JOIN
+
+* Join a table with itself to compare related rows.
+
+## Concepts Practiced
+
+* GROUP BY
+* AVG()
+* MIN()
+* MAX()
+* ORDER BY
+* HAVING
+* LIMIT
+* Aliases
+* RIGHT JOIN
+* SELF JOIN
+
+
 
 
