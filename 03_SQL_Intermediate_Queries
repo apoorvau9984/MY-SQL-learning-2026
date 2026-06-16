@@ -1,0 +1,47 @@
+-- GROUP BY
+SELECT occupation AS working_profile
+,AVG(salary) AS total_salary
+FROM parks_and_recreation.employee_salary
+WHERE salary<70000
+GROUP BY occupation;
+
+# MIN MAX 
+SELECT gender, MAX(age),MIN(age)
+FROM parks_and_recreation.employee_demographics
+GROUP BY gender;
+
+-- ORDER BY
+SELECT *
+FROM parks_and_recreation.employee_demographics
+ORDER BY first_name DESC ,age ASC;
+
+
+# HAVING VS WHERE
+SELECT occupation,AVG(salary)
+FROM parks_and_recreation.employee_salary
+WHERE occupation LIKE "%manager%"
+GROUP BY occupation
+HAVING AVG(salary)>=55000;
+
+-- LIMIT
+SELECT occupation , AVG(salary)
+FROM parks_and_recreation.employee_salary
+GROUP BY occupation
+LIMIT 3,1;
+
+#ALIASING
+SELECT  occupation,AVG(salary) avg_salary
+FROM parks_and_recreation.employee_salary
+GROUP BY occupation;
+
+-- JOIN
+SELECT *
+FROM parks_and_recreation.employee_demographics
+RIGHT JOIN parks_and_recreation.employee_salary
+    ON employee_demographics.employee_id = employee_salary.employee_id;
+    
+    # SELF JOIN
+    SELECT*
+    FROM parks_and_recreation.employee_salary emp_1
+    JOIN parks_and_recreation.employee_salary emp_2
+    ON emp_1.employee_id+1 = emp_2.employee_id
