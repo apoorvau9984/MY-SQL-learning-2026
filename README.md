@@ -121,6 +121,71 @@ This repository contains my practice work on intermediate SQL concepts in MySQL,
 * RIGHT JOIN
 * SELF JOIN
 
+#  4 SQL Union and String Functions
+
+## Overview
+
+This repository contains my practice work on SQL `UNION` operations and commonly used String Functions in MySQL.
+
+## Topics Covered
+
+### UNION
+
+* Combine results from multiple SELECT statements.
+* Remove duplicate records automatically.
+* Sort combined results using ORDER BY.
+
+### String Functions
+
+#### LENGTH()
+
+* Find the number of characters in a string.
+
+#### UPPER() and LOWER()
+
+* Convert text to uppercase and lowercase.
+
+#### TRIM Functions
+
+* `LTRIM()` removes leading spaces.
+* `RTRIM()` removes trailing spaces.
+
+#### SUBSTRING Functions
+
+* `LEFT()` extracts characters from the beginning.
+* `RIGHT()` extracts characters from the end.
+* `SUBSTRING()` extracts a specific part of a string.
+
+#### REPLACE()
+
+* Replace existing values with new values.
+
+#### LOCATE()
+
+* Find the position of a substring within a string.
+
+#### CONCAT()
+
+* Combine multiple values into a single string.
+
+## Concepts Practiced
+
+* UNION
+* ORDER BY
+* LENGTH()
+* UPPER()
+* LOWER()
+* LTRIM()
+* RTRIM()
+* LEFT()
+* RIGHT()
+* SUBSTRING()
+* REPLACE()
+* LOCATE()
+* CONCAT()
+
+## Learning Objectives
+
 
 
 
