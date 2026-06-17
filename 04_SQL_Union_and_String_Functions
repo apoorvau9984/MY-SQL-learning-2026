@@ -1,0 +1,60 @@
+-- UNION
+SELECT first_name,last_name, "Man" AS label
+FROM parks_and_recreation.employee_demographics
+WHERE age <=50 AND gender = "male"
+UNION
+SELECT first_name,last_name ,"Lady" AS label2
+FROM parks_and_recreation.employee_demographics
+WHERE age <= 50 AND gender ="female"
+UNION
+SELECT first_name ,last_name ,"Highly Paid Employee "AS label3
+FROM parks_and_recreation.employee_salary
+WHERE Salary > 70000
+ORDER BY first_name,last_name ASC;
+
+# STRING FUNCTIONS
+SELECT LENGTH("skyfall");
+
+SELECT first_name,LENGTH(first_name)
+FROM parks_and_recreation.employee_demographics
+ORDER BY 2;
+
+-- UPPERCASE and LOWERCASE
+SELECT UPPER('apoorva');
+SELECT LOWER('shivam');
+SELECT UPPER(first_name) NAME
+FROM parks_and_recreation.employee_demographics
+ORDER BY  first_name ASC;
+
+# TRIM
+SELECT LTRIM("  apoorva  ");
+SELECT RTRIM("     shivam    ");
+  
+  -- SUBSTRING
+  SELECT first_name,
+  LEFT( first_name,3),
+  RIGHT ( first_name,2),
+  birth_date,
+  SUBSTRING(birth_date,6,2)
+  FROM parks_and_recreation.employee_demographics;
+  
+  #  REPLACE
+  SELECT salary,REPLACE( salary ,'75000','88000') AS new_salary
+  FROM parks_and_recreation. employee_salary;
+  
+  -- LOCATE
+  SELECT first_name ,LOCATE("jerry", first_name)
+  FROM parks_and_recreation.employee_demographics;
+  
+  # CONCAT
+SELECT age,gender,
+CONCAT(age, '  ',gender) AS data_
+FROM parks_and_recreation.employee_demographics;
+  
+  
+
+
+
+
+
+
