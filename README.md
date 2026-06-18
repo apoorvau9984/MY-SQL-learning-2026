@@ -184,7 +184,53 @@ This repository contains my practice work on SQL `UNION` operations and commonly
 * LOCATE()
 * CONCAT()
 
-## Learning Objectives
+
+
+#  5 SQL Case Statements and Subqueries
+
+## Overview
+
+This repository contains my practice work on SQL `CASE` Statements and `Subqueries` in MySQL. These concepts help perform conditional logic and nested queries for advanced data analysis.
+
+## Topics Covered
+
+### CASE Statements
+
+#### Employee Age Categorization
+
+* Classify employees into different age groups.
+* Use multiple conditions with `WHEN` and `THEN`.
+
+#### Salary Increment and Bonus Calculation
+
+* Apply salary hikes based on salary ranges.
+* Calculate department-specific bonuses.
+
+### Subqueries
+
+#### Subquery with IN Operator
+
+* Retrieve records based on results returned by another query.
+
+#### Subquery in SELECT Statement
+
+* Display aggregate values alongside individual records.
+* Compare employee salaries with the overall average salary.
+
+## Concepts Practiced
+
+* CASE
+* WHEN
+* THEN
+* ELSE
+* END
+* CONCAT()
+* Conditional Logic
+* Subqueries
+* IN Operator
+* Nested Queries
+* Aggregate Functions
+
 
 
 
