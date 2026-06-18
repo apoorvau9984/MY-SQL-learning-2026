@@ -230,6 +230,57 @@ This repository contains my practice work on SQL `CASE` Statements and `Subqueri
 * IN Operator
 * Nested Queries
 * Aggregate Functions
+  # SQL Window Functions
+  
+ # 6 SQL Window Functions
+
+##  Overview
+
+This repository contains my practice work on SQL Window Functions in MySQL. Window functions perform calculations across a set of rows while preserving individual row details.
+
+##  Topics Covered
+
+### AVG() OVER()
+
+* Calculate the average salary across all rows without grouping data.
+
+### PARTITION BY
+
+* Divide data into groups and perform calculations within each group.
+* Example: Total salary by gender.
+
+### RANK()
+
+* Assign ranks based on salary within each gender group.
+* Equal values receive the same rank.
+
+### ROW_NUMBER()
+
+* Assign a unique sequential number to each row within a partition.
+
+### DENSE_RANK()
+
+* Similar to RANK(), but without gaps in ranking values.
+
+### Combining Window Functions
+
+* Use ROW_NUMBER(), RANK(), and DENSE_RANK() together for advanced analysis.
+
+## Concepts Practiced
+
+* Window Functions
+* OVER()
+* PARTITION BY
+* AVG()
+* SUM()
+* RANK()
+* ROW_NUMBER()
+* DENSE_RANK()
+* ORDER BY
+* JOIN
+
+
+
 
 
 
